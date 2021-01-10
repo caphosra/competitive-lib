@@ -57,5 +57,6 @@ bool chmin(T& old_itm, const T& new_itm) {
     return 0;
 }
 
-int dx[4] = {0, 1, 0, -1};
-int dy[4] = {1, 0, -1, 0};
+const int MOD1000000007 = 1000000007;
+const int dx[4] = {0, 1, 0, -1};
+const int dy[4] = {1, 0, -1, 0};
