@@ -24,11 +24,7 @@ using namespace std;
 #define FOR(i, a, b) for (int i = (a), i ## _size = (b); i < i ## _size; i++)
 #define RFOR(i, a, b) for (int i = (a) - 1,; i >= (b); i--)
 #define all(v) v.begin(), v.end()
-#define to_int(str) atoi(str.c_str())
 #define to_str(num) to_string(num)
-#define scani(x) int x; scanf("%d", &x)
-#define printi(x) printf("%d\n", x)
-#define STDIO_SETTING() ios::sync_with_stdio(false); std::cin.tie(nullptr)
 
 typedef long long ll;
 typedef long double ld;
@@ -43,6 +39,9 @@ using RPQ = priority_queue<T, vector<T>, less<T>>;
 inline void stdio_opt() {
     ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
+}
+inline int to_int(const char* str) {
+    return atoi(str);
 }
 template<typename T>
 bool chmax(T& old_itm, const T& new_itm) {
