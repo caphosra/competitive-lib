@@ -19,6 +19,8 @@ using namespace std;
 #define rrep(i, n) for (int i = (n) - 1; i >= 0; i--)
 #define FOR(i, a, b) for (int i = (a), i ## _size = (b); i < i ## _size; i++)
 #define RFOR(i, a, b) for (int i = (a) - 1,; i >= (b); i--)
+#define foreach(i, a) for (auto i : a)
+#define each(i, a) foreach(i, a)
 #define all(v) v.begin(), v.end()
 
 typedef long long ll;
