@@ -1,5 +1,16 @@
-#include "bits/stdc++.h"
+//-------------------------------
 
+#define ACTIVATE_GCC_OPT
+
+//-------------------------------
+
+#ifdef ACTIVATE_GCC_OPT
+#   pragma GCC target("avx2")
+#   pragma GCC optimize("O3")
+#   pragma GCC optimize("unroll-loops")
+#endif
+
+#include <bits/stdc++.h>
 using namespace std;
 
 #ifdef DEBUG
