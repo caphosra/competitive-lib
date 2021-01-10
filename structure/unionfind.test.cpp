@@ -10,7 +10,7 @@
 //-------------------------------
 
 int N, Q;
-UnionFind<int> uf;
+UnionFind<int> uf(300000);
 
 signed main() {
     stdio_opt();
