@@ -40,6 +40,10 @@ using PQ = priority_queue<T, vector<T>, greater<T>>;
 template<typename T>
 using RPQ = priority_queue<T, vector<T>, less<T>>;
 
+inline void stdio_opt() {
+    ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+}
 template<typename T>
 bool chmax(T& old_itm, const T& new_itm) {
     if (old_itm < new_itm) {
@@ -69,7 +73,7 @@ void solve() {
 }
 
 signed main() {
-    STDIO_SETTING();
+    stdio_opt();
 
     //
     // Code for processing stdin here
