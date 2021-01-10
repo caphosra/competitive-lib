@@ -1,0 +1,25 @@
+name: Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    name: Test of competitive-lib
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v1
+      - name: Run test of competitive-lib
+        run: |
+          pip3 install online-judge-verify-helper
+          oj-verify run
+        env:
+          RUSTUP_TOOLCHAIN: stable
+          TEST_PROJECT: ${{ matrix.project }}
